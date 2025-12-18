@@ -1,0 +1,91 @@
+#Exercise 28: This exercise focuses on logic.
+# The NOT table
+
+print(not False)      # True
+print(not True)       # False
+
+# The OR table
+
+print(True or False)   # True
+print(True or True)    # True
+print(False or True)   # True
+print(False or False)  # False
+
+# The AND table
+
+print(True and False)  # False
+print(True and True)   # True
+print(False and True)  # False
+print(False and False) # False
+
+# Combined logic (NOT OR / NOT AND)
+
+print(not (True or False))  # False
+print(not (True and False)) # True
+
+# Not Equal (!=)
+
+print(1 != 0)  # True
+print(1 != 1)  # False
+print(0 != 1)  # True
+print(0 != 0)  # False
+
+# Equal (==)
+
+print(1 == 0)  # False
+print(1 == 1)  # True
+print(0 == 1)  # False
+print(0 == 0)  # True
+
+
+#Exercise 29: This exercise involves playing around with boolean expressions and practicing them
+# 1. Simple comparison
+print(1 == 1 and 2 == 2)
+
+# 2. Testing inequality
+print(10 < 20)
+
+# 3. A complex one from the drill
+print(not (True or False) and (5 != 4))
+
+ # Below is a guide to show how the NOT equal to operator works
+print(1 != 0)  # Should show True
+print(1 != 1)  # Should show False
+print(0 != 1)  # Should show True
+print(0 != 0)  # Should show False
+
+# Testing "Equal" (==)
+
+print(1 == 0)  # Should show False
+print(1 == 1)  # Should show True
+print(0 == 1)  # Should show False
+print(0 == 0)  # Should show True
+
+#Exercise 30: This exercise shows and focuses on the use of the 'What If' statement
+#Variables were created because the statement requires values to operate on, without variables the statement's output would be null
+people = 20
+cats = 30
+dogs = 15
+
+if people < cats:
+    print("Too many cats! The world is doomed!")
+
+if people > cats:
+    print("Not many cats! The world is saved!")
+
+if people < dogs:
+    print("The world is drooled on!")
+
+if people > dogs:
+    print("The world is dry!")
+
+dogs += 5
+
+if people >= dogs:
+    print("People are greater than or equal to dogs.")
+
+if people <= dogs:
+    print("People are less than or equal to dogs.")
+
+if people == dogs:
+    print("People are dogs.")
